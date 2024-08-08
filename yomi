@@ -1,1 +1,21 @@
 eks commands
+
+
+$ sudo yum remove -y aws-cli
+$ pip3 install --user awscli
+$ sudo ln -s $HOME/.local/bin/aws /usr/bin/aws
+$ aws --version
+
+
+
+3--Installing  eksctl
+
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+cd /tmp
+sudo mv /tmp/eksctl /bin
+eksctl version
+
+
+---> To install kubectl 
+https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+
